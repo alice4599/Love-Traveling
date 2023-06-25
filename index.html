@@ -61,6 +61,21 @@
         filter: contrast(80%);
         transform: scale(1.1);
       }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 15px;
+        margin: 15px 0;
+      }
+      .grid img {
+        width: 100%;
+        border-radius: 8px;
+        object-fit: cover;
+      }
+      .grid img:hover {
+        transform: scale(1.7);
+      }
     </style>
   </head>
   <body>
@@ -77,29 +92,48 @@
           class="indonesia"
           alt=""
       /></a>
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/883/original/lombok.jpg?1687615045"
-        alt=""
-      />
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/882/original/komodo.jpg?1687615035"
-        alt=""
-      />
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/881/original/flores.jpg?1687615027"
-        alt=""
-      />
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/884/original/sulawesi.jpg?1687615052"
-        alt=""
-      />
-      <p>
+      <div class="grid">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/883/original/lombok.jpg?1687615045"
+          class="lombok"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/882/original/komodo.jpg?1687615035"
+          class="komodo"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/881/original/flores.jpg?1687615027"
+          class="flores"
+          alt=""
+        />
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/086/884/original/sulawesi.jpg?1687615052"
+          class="sulawesi"
+          alt=""
+        />
+      </div>
+      <h3>
         Bali–Lombok–Gili Islands may be the classic Indonesian "tour" but there
         is so much more to Indonesia. With more than 13,000 islands to choose
         from, the world’s biggest islands-nation offers an entire world of
-        adventure. Plan your trip around these 11 highlights.
+        adventure.
+      </h3>
+      <h3>Mount Rinjani Volcano Trekking</h3>
+      <p>
+        Usually, you'll find Mount Rinjani trekking at the top of nearly
+        everybody's list of what to do on Lombok, and rightly so! Trekking Mount
+        Rinjani was hands down one of the most epic adventures we had on Lombok.
+        In fact, I believe that climbing Rinjani is one of the most incredible
+        hiking experiences you can have in South East Asia. The volcanic rim is
+        breathtaking and the spectacular views of the crater lake makes you feel
+        like you're on another planet! Most treks leave from Senaru, however,
+        less-popular routes are also completed from Tete Batu and Sembalun. If
+        you're chasing the summit, I'd suggest trying to negotiate with local
+        trekking guides in Senaru or in Sembalun.
       </p>
-      <br />
+
       <h3>
         Walk with dragons in Komodo National Park The Unesco-protected Komodo
       </h3>
@@ -112,7 +146,7 @@
         in some of the natural icons of the world’s second richest wildlife
         zones (only the Amazon has greater natural diversity than Indonesia).
       </p>
-      <br />
+
       <h3>Visit the mystical Kelimutu Lakes in Flores</h3>
       <p>
         Due to a strange quirk of geology, the three sister-lakes of Kelimutu in
@@ -125,7 +159,7 @@
         the spot to visit the crater lakes around dawn before the mountain mists
         descend.
       </p>
-      <br />
+
       <h3>Experience one of the world’s last megalithic cultures in Sumba</h3>
       <p>
         The island of Sumba remains almost unknown despite being twice the size
