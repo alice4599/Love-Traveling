@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Indonesia - My dream country</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Indonesia - My dream country</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500;700&family=Sono:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
     <style>
       body {
         background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+        font-family: poppins;
+        text-align: center;
       }
       h1 {
         text-align: center;
@@ -42,6 +51,7 @@
       .container {
         max-width: 600px;
         background-color: white;
+        opacity: 60%;
         padding: 20px;
         border-radius: 10px;
         margin: 20px auto;
@@ -75,9 +85,10 @@
         width: 100%;
         border-radius: 8px;
         object-fit: cover;
+        transition: all 150ms ease-in-out;
       }
       .grid img:hover {
-        transform: scale(1.7);
+        transform: scale(1.8);
       }
       .dark {
         background: linear-gradient(
@@ -92,6 +103,9 @@
       }
       .dark a {
         color: white;
+      }
+      .visitButton {
+        text-decoration: none;
       }
     </style>
   </head>
@@ -131,12 +145,12 @@
           alt=""
         />
       </div>
-      <h3>
+      <h4>
         Bali–Lombok–Gili Islands may be the classic Indonesian "tour" but there
         is so much more to Indonesia. With more than 13,000 islands to choose
         from, the world’s biggest islands-nation offers an entire world of
         adventure.
-      </h3>
+      </h4>
       <h3>Mount Rinjani Volcano Trekking</h3>
       <p>
         Usually, you'll find Mount Rinjani trekking at the top of nearly
@@ -188,7 +202,13 @@
         Sumba is one of Indonesia’s developing frontiers for adventurous
         travelers.
       </p>
-      <button>Visit Indonesia</button>
+      <button>
+        <a
+          href="https://www.weseektravel.com/things-to-do-lombok-indonesia/"
+          class="visitButton"
+          >Visit Indonesia</a
+        >
+      </button>
     </div>
     <footer>
       <small>
